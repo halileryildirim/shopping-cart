@@ -6,8 +6,9 @@ const Home = () => {
         <>
             <Navbar></Navbar>
             <h1>BYSHOP</h1>
-            <h2>We bring you the best of everything!</h2>
-            <h2>Check out our wares!</h2>
+            {
+                //Add edgy background colors, change font to white, search for font family.
+            }
             <button><Link to='/'>Shop</Link></button>
         </>
     )
