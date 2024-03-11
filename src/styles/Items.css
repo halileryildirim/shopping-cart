@@ -1,0 +1,11 @@
+.items-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.item {
+    text-align: center;
+    width: 500px;
+}

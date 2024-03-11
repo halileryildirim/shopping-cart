@@ -9,7 +9,7 @@ const Home = () => {
             {
                 //Add edgy background colors, change font to white, search for font family.
             }
-            <button><Link to='/'>Shop</Link></button>
+            <button><Link to='shop'>Shop</Link></button>
         </>
     )
 }

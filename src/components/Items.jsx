@@ -18,9 +18,9 @@ const Items = () => {
     }, [])
 
     return (
-        <>
+        <div className="items-container">
             {items && items.map((item) => (
-                <div key={item.id} style={{ width: "300px", height: "400px" }}>
+                <div className="item" key={item.id}>
                     <img style={{ width: "200px", height: "200px" }} src={item.image} alt="item" />
                     <p>{item.title}</p>
                     <p>{item.description}</p>
@@ -28,7 +28,7 @@ const Items = () => {
                 </div>
                 
             ))}
-        </>
+        </div>
     )
 }
 
