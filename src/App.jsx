@@ -1,9 +1,12 @@
 import Home from "./components/Home";
-import API from "./components/API";
+import Items from "./components/Items";
 
 const App = () => {
     return (
-        <Home />
+        <>
+            <Home />
+            <Items /> 
+        </>
     )
 }
 
