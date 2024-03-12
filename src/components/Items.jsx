@@ -20,15 +20,21 @@ const Items = () => {
     }, [])
 
     return (
-        <div className="items-container">
-            {items && items.map((item) => (
-                <ShopItem key={item.id} item={item}/>
-            ))}
-        </div>
+        <>
+            <div className="catalog-container">
+                <h1 style={{textAlign:"center", fontSize:"3rem"}}>SHOP</h1>
+                <div className="items-container">
+                    {items && items.map((item) => (
+                        <ShopItem key={item.id} item={item}/>
+                    ))}
+                </div>
+            </div>            
+        </>
+
     )
 }
 
 export default Items;
-//Todo: add to cart button for items, add extra containers to item divs for styling, overflow for descriptions and same size for all sections to align prices, titles etc.
+//Todo: add to cart button for items
 
 //Add item components for each item, link it to shop router, show just image, price, amount and add to cart. When clicked on item show items on full details and also add the option to add cart. Include navbar in item components
