@@ -1,0 +1,28 @@
+.cart-form {
+    display: flex;
+    gap: 4px;
+}
+
+/* Hide the default number buttons */
+.cart-form input[type="number"]::-webkit-inner-spin-button,
+.cart-form input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.count-button {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+}
+
+#add-input {
+    max-width: 58px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+}

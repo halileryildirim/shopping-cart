@@ -1,12 +1,14 @@
+import "../styles/AddToCart.css"
+
 const AddToCart = () => {
     return (
         <>
             <form className="cart-form">
-                <label htmlFor="add-input">Add to Cart</label>
-                <button type="button">-</button>
-                <input type="num" id="add-input" />
-                <button type="button">+</button>
-                <button type="submit">Add to Cart</button>
+                <label htmlFor="add-input"></label>
+                <button type="button" className="count-button">-</button>
+                <input type="number" id="add-input" placeholder="1"/>
+                <button type="button" className="count-button">+</button>
+                <button type="submit" style={{borderRadius:"4px"}}>Add to Cart</button>
             </form>
         </>
     )
