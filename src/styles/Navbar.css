@@ -1,11 +1,12 @@
 .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: black;
     color: white;
     margin-bottom: 16px;
+    padding: 0 16px;
 }
 
 .navbar-links > ul{

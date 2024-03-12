@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import AddToCart from "./AddToCart";
 
 const ShopItem = ({ item }) => {
     return (
@@ -6,6 +7,7 @@ const ShopItem = ({ item }) => {
             <img style={{ width: "200px", height: "250px" }} src={item.image} alt="item" />
             <h4>{item.title}</h4>
             <p><strong>{item.price}$</strong></p>
+            <AddToCart/>
         </div>
     )
 };

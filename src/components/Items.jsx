@@ -3,6 +3,7 @@ import API from "./API";
 import '../styles/Items.css';
 import ShopItem from "./ShopItem";
 
+
 const Items = () => {
     const [items, setItems] = useState([]);
 
@@ -22,10 +23,12 @@ const Items = () => {
     return (
         <>
             <div className="catalog-container">
-                <h1 style={{textAlign:"center", fontSize:"3rem"}}>SHOP</h1>
+                <h1 style={{textAlign:"center", fontSize:"3rem"}}>BYShop</h1>
                 <div className="items-container">
                     {items && items.map((item) => (
-                        <ShopItem key={item.id} item={item}/>
+                        <>
+                            <ShopItem key={item.id} item={item} />
+                        </>
                     ))}
                 </div>
             </div>            
