@@ -8,7 +8,7 @@ const AddToCart = () => {
                 <button type="button" className="count-button">-</button>
                 <input type="number" id="add-input" placeholder="1"/>
                 <button type="button" className="count-button">+</button>
-                <button type="submit" style={{borderRadius:"4px"}}>Add to Cart</button>
+                <button type="submit" style={{borderRadius:"4px", height:"32px", marginLeft:"12px"}}>Add to Cart</button>
             </form>
         </>
     )
