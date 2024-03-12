@@ -16,7 +16,7 @@
     list-style: none;
 }
 
-a {
+.navbar a {
     text-decoration: none;
     color: white;
     font-size: 24px;
