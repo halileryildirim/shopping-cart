@@ -26,9 +26,7 @@ const Items = () => {
                 <h1 style={{textAlign:"center", fontSize:"3rem"}}>BYShop</h1>
                 <div className="items-container">
                     {items && items.map((item) => (
-                        <>
-                            <ShopItem key={item.id} item={item} />
-                        </>
+                        <ShopItem key={item.id}  item={item} />
                     ))}
                 </div>
             </div>            

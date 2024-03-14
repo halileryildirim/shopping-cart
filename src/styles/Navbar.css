@@ -12,7 +12,7 @@
 .navbar-links > ul{
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 32px;
     list-style: none;
 }
 
