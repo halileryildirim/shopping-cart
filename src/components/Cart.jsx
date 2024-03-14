@@ -2,7 +2,7 @@ import Navbar from "./Navbar"
 
 const Cart = ({ cart }) => {
     const calculateTotalPrice = () => {
-        return cart && cart.reduce((total, item) => total + item.price * item.quant, 0)
+        // return cart && cart.reduce((total, item) => total + item.price * item.quant, 0)
     }
     return (
         <>
@@ -14,10 +14,10 @@ const Cart = ({ cart }) => {
                     <p>{item.name}</p>
                     <p>{item.price}</p>
                     <p>{item.quant}</p>
-                    <h5>Price: {item.price * item.quant} </h5>
+                    <h5>Price: {item.price * item.quant} $</h5>
                 </div>
             ))}
-            <p>Total Price: {calculateTotalPrice()}</p>
+            <p>Total Price: {calculateTotalPrice()} $</p>
             <button type="button">Checkout</button> 
         </>
     )
