@@ -10,7 +10,7 @@ const ShopItem = ({ item }) => {
                 <h4>{item.title}</h4>
                 <p><strong>{item.price}$</strong></p>
             </div>
-            <AddToCart item={item}/>
+            <AddToCart item={item} />
         </div>
     )
 };
