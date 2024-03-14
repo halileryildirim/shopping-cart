@@ -1,16 +1,8 @@
 import { useState } from "react";
 import "../styles/AddToCart.css";
 
-const AddToCart = ({item}) => {
+const AddToCart = () => {
     const [quant, setQuant] = useState(1);
-    const [cart, setCart] = useState([]);
-
-    async function handleCart(quantity) {
-        item.quant = quantity;
-        cart.push(item)
-        setCart(...cart);
-        console.log(cart);
-    }
 
     const increaseQuant = () => {
         if (quant < 10) {
@@ -35,7 +27,7 @@ const AddToCart = ({item}) => {
                 <button type="button" className="count-button" onClick={decreaseQuant}>-</button>
                 <input type="number" id="add-input" value={quant} onChange={handleQuant} />
                 <button type="button" className="count-button" onClick={increaseQuant}>+</button>
-                <button type="button" style={{ borderRadius: "4px", height: "32px", marginLeft: "12px" }} onClick={() => handleCart(quant)}>Add to Cart</button>
+                <button type="button" style={{ borderRadius: "4px", height: "32px", marginLeft: "12px" }}>Add to Cart</button>
             </form>
         </>
     )
