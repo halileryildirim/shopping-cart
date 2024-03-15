@@ -5,6 +5,7 @@ import App from './App.jsx'
 import ErrorPage from './components/ErrorPage.jsx'
 import Shop from './components/Shop.jsx'
 import Cart from './components/Cart.jsx'
+import { CartProvider } from './components/CartContext.jsx'
 import './index.css'
 
 
@@ -28,6 +29,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <CartProvider>
+      <RouterProvider router={router}/> 
+    </CartProvider>
   </React.StrictMode>
 )
