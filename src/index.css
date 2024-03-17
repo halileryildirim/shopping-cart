@@ -1,3 +1,13 @@
+@font-face {
+    font-family: shopFont;
+    src: url("./fonts/EternalEmperor-axw1m.ttf");
+}
+
 body {
     margin: 0;
+    font-family: shopFont, sans-serif;
+}
+
+body button {
+    font-family: shopFont, sans-serif;
 }

@@ -30,3 +30,7 @@
     color: white;
     border: none;
 }
+
+.cart-form button:hover {
+    cursor: pointer;
+}
