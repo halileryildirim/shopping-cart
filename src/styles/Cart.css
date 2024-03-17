@@ -1,6 +1,6 @@
 .cart-body {
     margin-top: 3em;
-    padding: 0 128px;
+    padding: 0 128px 64px 128px;
     font-size: 16px;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .added-item p {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .added-item button {
@@ -49,4 +49,26 @@
 
 .added-item button:hover {
     background-color: #ff4837;
+}
+
+.checkout-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.checkout-details button {
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.842);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.checkout-details button:hover {
+    background-color: black;
+    cursor: pointer;
 }

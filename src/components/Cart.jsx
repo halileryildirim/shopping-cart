@@ -16,16 +16,16 @@ const Cart = () => {
                             <img className="added-item-img" src={item.image} alt="item" />
                             <div className="added-item-details">
                                 <p className="added-item-title">{item.title}</p>
-                                <p>{item.quantity} pcs</p>
-                                <p>{item.price} $</p>
+                                <p>Price: {item.price} $</p>
+                                <p>Quantity: {item.quantity}</p>
                                 <p>Total Price: {item.price * item.quantity}$</p>
                             </div>
                             <button onClick={() => removeFromCart(item.id)}>Remove</button>
                         </div>
                     ))}
                 </div>
-                <div>
-                    <p>{totalPrice === 0 ? "Your cart is empty" : `Checkout Price : ${totalPrice}$`}</p>
+                <div className="checkout-details">
+                    <p>{`Total Price : ${totalPrice}$`}</p>
                     <button className="checkout-button">Checkout</button>
                 </div>
             </div>
