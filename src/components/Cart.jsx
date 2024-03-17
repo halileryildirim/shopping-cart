@@ -12,6 +12,7 @@ const Cart = () => {
                     <div key={item.id}>
                         <img src={item.image} alt="item" />
                         <p>{item.title}</p>
+                        <p>{item.quantity}</p>
                         <p>Price: {item.price}</p>
                         <button onClick={() => removeFromCart(item.id)}>Remove</button>
                     </div>

@@ -21,6 +21,7 @@ const AddToCart = ({ item }) => {
     
 
     const handleCartSubmit = () => {
+        item = {...item, quantity: quant}
         addToCart(item)
         setQuant(1);
     }
