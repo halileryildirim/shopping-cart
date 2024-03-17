@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import { useCart } from "./CartContext";
+import { useCart } from "../CartContext";
 import '../styles/Cart.css';
 
 const Cart = () => {

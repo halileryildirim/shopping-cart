@@ -5,7 +5,7 @@ import App from './App.jsx'
 import ErrorPage from './components/ErrorPage.jsx'
 import Shop from './components/Shop.jsx'
 import Cart from './components/Cart.jsx'
-import { CartProvider } from './components/CartContext.jsx'
+import { CartProvider } from './CartContext.jsx'
 import './index.css'
 
 
