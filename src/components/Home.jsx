@@ -8,9 +8,7 @@ const Home = () => {
             <Navbar></Navbar>
             <div className="container">
                 <h1 style={{fontSize:"6rem"}}>BYSHOP</h1>
-                {
-                    //Add edgy background colors, change font to white, search for font family.
-                }
+                <h2 style={{fontSize:"2rem"}}>BYShop has wares, if you have coin</h2>
                 <button><Link to='shop'>Shop</Link></button>
             </div>
         </>

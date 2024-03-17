@@ -10,7 +10,8 @@ export const CartProvider = ({ children }) => {
 
     useEffect(() => {
         const calculateTotalPrice = () => {
-            return cart.reduce((total, item) => total + (item.quantity * item.price), 0);
+            const sum = cart.reduce((total, item) => total + (item.quantity * item.price), 0);
+            return Math.floor(sum * 100) / 100;
         }
 
         setTotalPrice(calculateTotalPrice());

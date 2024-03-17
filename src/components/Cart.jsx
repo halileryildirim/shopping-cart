@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import { useCart } from "./CartContext";
+import '../styles/Cart.css';
 
 const Cart = () => {
     const { cart, totalPrice, removeFromCart} = useCart();
@@ -7,19 +8,26 @@ const Cart = () => {
     return (
         <>
             <Navbar/>
-            <div>
+            <div className="cart-body">
                 <h2>Your Cart</h2>
-                {cart.map((item) => (
-                    <div className="added-item" key={item.id}>
-                        <img className="added-item-img" src={item.image} alt="item" />
-                        <p className="added-item">{item.title}</p>
-                        <p className="added-item">{item.quantity}</p>
-                        <p className="added-item">Price: {item.price}</p>
-                        <button className="added-item" onClick={() => removeFromCart(item.id)}>Remove</button>
-                    </div>
-                ))}
-                <p>{totalPrice === 0 ? "Your cart is empty" : `Total Price : ${totalPrice}$`}</p>
-                <button>Checkout</button>
+                <div className="cart">
+                    {cart.map((item) => (
+                        <div className="added-item" key={item.id}>
+                            <img className="added-item-img" src={item.image} alt="item" />
+                            <div className="added-item-details">
+                                <p className="added-item-title">{item.title}</p>
+                                <p>{item.quantity} pcs</p>
+                                <p>{item.price} $</p>
+                                <p>Total Price: {item.price * item.quantity}$</p>
+                            </div>
+                            <button onClick={() => removeFromCart(item.id)}>Remove</button>
+                        </div>
+                    ))}
+                </div>
+                <div>
+                    <p>{totalPrice === 0 ? "Your cart is empty" : `Checkout Price : ${totalPrice}$`}</p>
+                    <button className="checkout-button">Checkout</button>
+                </div>
             </div>
         </>
     )
