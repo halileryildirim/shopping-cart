@@ -8,7 +8,15 @@ export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
 
     const addToCart = (item) => {
-        setCart([...cart, item]);
+        const existingItemID = cart.findIndex(cartItem => cartItem.id === item.id)
+        if (existingItemID !== -1) {
+            const updatedCart = [...cart];
+            updatedCart[existingItemID].quantity += item.quantity;
+            setCart(updatedCart);
+        }
+        else {
+            setCart([...cart, item]);
+        }
     };
 
     const removeFromCart = (itemId) => {
