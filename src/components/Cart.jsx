@@ -2,7 +2,8 @@ import Navbar from "./Navbar";
 import { useCart } from "./CartContext";
 
 const Cart = () => {
-    const { cart, removeFromCart } = useCart();
+    const { cart, removeFromCart, totalPrice } = useCart();
+
     return (
         <>
             <Navbar/>
@@ -17,6 +18,8 @@ const Cart = () => {
                         <button onClick={() => removeFromCart(item.id)}>Remove</button>
                     </div>
                 ))}
+                <p>Total Price: {totalPrice} $</p>
+                <button>Checkout</button>
             </div>
         </>
     )
